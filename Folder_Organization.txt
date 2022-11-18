@@ -1,0 +1,17 @@
+LCVMM MD result folder organisation:
+
+RunName: Parent folder of a set of simulations:
+
+RunName/Seq1 
+RunName/Seq2
+	…
+RunName/SeqN
+
+Seq# Organisation:
+
+Seq#/Frames    : Contains all the .fra and .pfra generated from the MD
+Seq#/Trj	      : Contains raw trajectories
+Seq#/anl       : Contains post-processing of raw trajectories  
+ Seq#/anl/Dry  : Contains dry trajectories (dna+ions) 
+ Seq#/anl/HB   : Hydrogen bonds distances and angles of all the trajectories
+Seq#/MHE       : Result of the minimisation, heating, equilibrium procedure 
